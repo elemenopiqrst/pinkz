@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif, Cupofcoffee, Courier Prime Bold;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmV6a5Vcbxf0hB53icc-9lWS4ysmPHM7HEOQ&usqp=CAU');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    
+}
+html, body {
+    height: 100%;
+}
+.mouse-trail {
+    position: absolute;
+    background-image: url('brown.png'); 
+    background-size: cover;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999; 
+    transition: transform 0.3s ease-out;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    display: flex;
+    font-family: 'Cupofcoffee';
+   
+}
+
+h1 span {
+    left: 50px;
+    position: relative;
+    color: transparent;
+}
+
+h1 span:nth-child(1)::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #261a12, #8d6346, #261a12); 
+    background-size: 200% 200%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    position: relative; 
+    z-index: 2; 
+}
+
+.animated-coffee {
+    width: 200px; 
+    height: auto; 
+    position: absolute; 
+    top: auto; 
+    left: 10px; 
+    animation: floatCoffee 2s ease-in-out infinite; 
+    z-index: 1; 
+}
+
+@keyframes floatCoffee {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0);
+    }
+}
+
+header {
+    background-color: #EAD7BB; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Courier Prime Bold';
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+section {
+    margin: 40px;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgb(1, 1, 1);
+    background-color: #BCA37F; 
+    
+}
+
+section contact img {
+    max-width: 0px;
+    margin: 10px;
+    padding: 10px;
+    background-size: 10;
+}
+
+h2 {
+    color: #000000;
+    font-family:'Courier Prime Bold'
+}
+
+h1, h3, h4 {
+    color: #272727;
+}
+
+img {
+    width: 300px; 
+    height: 250px; 
+    object-fit: cover; 
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #EAD7BB;
+    color: black;
+    font-size: 10px;
+    padding: 12px;
+    
+}
+p{
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 15px;
+
+
+}
